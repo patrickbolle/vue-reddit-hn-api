@@ -1,23 +1,24 @@
 <template lang="html">
-  <div class="post">
-    <a :href="item.data.url" :style="item.data.thumbnail | setAsBackground"
-       target="_blank" class="thumbnail"></a>
-    <div class="details">
-        <a :href="item.data.url" :title="item.data.title" target="_blank" class="title">
-            {{ item.data.title | truncate}}
-        </a>
-        <div class="action-buttons">
-            <a href="http://reddit.com{{ item.data.permalink }}" title="Vote">
-                <i class="material-icons">thumbs_up_down</i>
-                {{item.data.score}}
-            </a>
-            <a href="http://reddit.com{{ item.data.permalink }}" title="Go to discussion">
-                <i class="material-icons">forum</i>
-                {{item.data.num_comments}}
-            </a>
+    <div class="box">
+      <article class="media">
+        <div class="media-left">
+          <figure class="image is-64x64">
+            <img v-ifsrc="{{item.data.thumbnail}}" alt="Image">
+          </figure>
         </div>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <a href="{{item.data.url}}">
+                  {{ item.data.title | truncate}}
+              </a>
+              <br>
+            </p>
+          </div>
+        </div>
+      </article>
     </div>
-  </div>
+  <br>
 </template>
 
 <script>

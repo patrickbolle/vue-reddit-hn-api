@@ -1,7 +1,7 @@
 <template name="subreddit">
-  <div class="subreddit">
-    <h2>{{ name | uppercase }}</h2>
-
+  <div class="subreddit has-text-centered">
+    <h2 class="title is-3">{{ name | uppercase }}</h2>
+    <hr>
     <ul class="item-list">
         <li v-for="obj in posts">
             <post :item="obj"></post>

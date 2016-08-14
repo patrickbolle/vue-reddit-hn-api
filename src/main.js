@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import App from './App'
 import Resource from 'vue-resource'
+import Sortable from 'vue-sortable'
 
 // Use resource package
 Vue.use(Resource)
+Vue.use(Sortable)
 
 // Filter for cutting off strings that are too long.
 Vue.filter('truncate', function (value) {
