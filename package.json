@@ -15,9 +15,7 @@
     "bulma": "^0.1.2",
     "vue": "^1.0.21",
     "vue-resource": "^0.9.3",
-    "vue-sortable": "^0.1.3"
-  },
-  "devDependencies": {
+    "vue-sortable": "^0.1.3",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-plugin-transform-runtime": "^6.0.0",
@@ -45,5 +43,8 @@
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
     "webpack-merge": "^0.8.3"
+  },
+  "devDependencies": {
+
   }
 }
